@@ -10,6 +10,9 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
   crossorigin="anonymous">
   <meta charset="utf-8">
+  <!--Iconos del clima-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Kg4/gKBC7VHfePJt/cRpKGQvRuzt2nC+EpYjT8+rTUWzTMTw+QNirSKPPjxbp9XsWfRLdwm7zMQFbDKu+c3dCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body class="bg-secondary">
   <header>
@@ -35,6 +38,10 @@
           <a class="nav-link text-white" href="personajes.html">Personajes Historicos</a>
           </li>
         </ul>
+        <div class="d-flex flex-row-reverse ms-auto">
+          <div id="weather-icon" class="text-white"><i class="fas fa-sun"><i class="wi wi-day-sunny"></i></i></div>
+          <div id="weather-info" class="text-white"></div>
+          </div>
         </div>
       </div>
       </nav>
@@ -149,6 +156,8 @@
 	integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
 	crossorigin="anonymous">
 </script>
+<script src="/js/weather.js"></script>
+<script src="/js/wheather-icons.js"></script>
 
 </body>
 </html>
