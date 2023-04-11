@@ -5,7 +5,7 @@ fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${ap
   .then(response => response.json())
   .then(data => {
     const cityKey = data[0].Key;
-    return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}`);
+    return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}&lang=es`);
   })
   .then(response => response.json())
   .then(data => {
